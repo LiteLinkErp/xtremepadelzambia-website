@@ -2558,3 +2558,9 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+.background-image1 {
+  background: url('assets/img/background-image1') no-repeat center center;
+  background-size: cover;
+}
