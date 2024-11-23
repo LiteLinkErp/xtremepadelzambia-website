@@ -18,8 +18,10 @@ th, td {
   padding: 12px;
   text-align: center;
   border: 1px solid #ddd;
+  background-color: #c77c1d;
+  color: #fff;
 }
-
+/*
 th {
   background-color: #f3f3f3;
   color: #333;
@@ -29,7 +31,7 @@ th {
 td {
   background-color: #f9f9f9;
 }
-
+*/
 .time-header {
   background-color: #c77c1d;
   color: #fff;
