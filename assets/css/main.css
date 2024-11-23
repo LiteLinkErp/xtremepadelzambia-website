@@ -1021,8 +1021,8 @@ section,
 
 .services .service-item .icon {
   position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
+  left: 4px;
+  top: calc(50% - 110px);
 }
 
 .services .service-item .icon i {
