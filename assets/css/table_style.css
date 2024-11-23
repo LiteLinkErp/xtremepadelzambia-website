@@ -1,14 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
-}
 
 .table-container {
   overflow-x: auto; /* Makes the table horizontally scrollable on small screens */
@@ -17,9 +7,11 @@ body {
 }
 
 table {
-  width: 100%;
+  
   border-collapse: collapse;
   background-color: #fff;
+    margin-left: 297px;
+    margin-right: 289px
 }
 
 th, td {
