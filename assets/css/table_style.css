@@ -72,7 +72,7 @@ td {
   }
 }
 
-#about #services  {
+#about, #services  {
   /* Set the size of the section */
   width: 100%;
 
