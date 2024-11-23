@@ -80,7 +80,7 @@ td {
   /* Apply a gradient background */
   background: linear-gradient(45deg, #ff6f61, #6b5b95, #88b04b, #f7b7a3);
   background-size: 400% 400%;
-  
+  color: white;
   /* Animation settings */
   animation: gradientAnimation 15s ease infinite;
   position: relative;
