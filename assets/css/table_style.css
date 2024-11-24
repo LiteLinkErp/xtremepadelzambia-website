@@ -171,3 +171,24 @@ td {
 .phone-number i {
   font-size: 20px; /* Size of the icon */
 }
+
+
+/*Resize company name */
+/* Base style for larger screens */
+.company-name {
+  font-size: 2.5rem !important; /* Default size for large screens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .company-name {
+    font-size: 1rem !important;
+  }
+}
