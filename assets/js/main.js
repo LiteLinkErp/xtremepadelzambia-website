@@ -241,10 +241,7 @@
     //const corsProxy = 'https://cors-anywhere.herokuapp.com/'; // CORS proxy
 
     try {
-        const response = await fetch(url, {
-          method: 'GET',
-          mode: 'no-cors' // Disables CORS checking
-        });
+        const response = await fetch(url);
         const data = await response.json();
 
         // Extract unique dates and times
