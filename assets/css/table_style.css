@@ -102,12 +102,12 @@ td {
   display: inline-block;
 }
 
-.court.booked-male {
+.court.bookedfor-M {
   background-color: blue;
   color: white;
 }
 
-.court.booked-female {
+.court.bookedfor-F {
   background-color: pink;
   color: #333;
 }
@@ -190,5 +190,137 @@ td {
 @media (max-width: 480px) {
   .company-name {
     font-size: 1rem !important;
+  }
+}
+
+
+
+/*CSS for legend  */
+.legend {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  gap: 20px; /* Adds space between items */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center; /* Align color box and text in the center vertically */
+  gap: 10px; /* Adds space between the color box and text */
+}
+
+.color-box {
+  width: 20px; /* Size of the color box */
+  height: 20px;
+  border-radius: 4px; /* Optional: Make the box slightly rounded */
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.selected-now{
+  background-color: yellow;
+  color: black;
+  font-weight: 800;
+}
+
+/*proceed button */
+.button-container {
+  text-align: center;
+}
+
+.proceed-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proceed-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.proceed-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*quantity container */
+
+/* Quantity Container */
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.quantity-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Dropdown Styles */
+.quantity-dropdown {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  appearance: none; /* Remove native styles for dropdown */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Result Container */
+.result-container {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .quantity-dropdown {
+      font-size: 14px;
+  }
+
+  .result-container {
+      font-size: 16px;
   }
 }

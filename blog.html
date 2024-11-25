@@ -329,6 +329,16 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const selectedBookings = JSON.parse(localStorage.getItem('selectedBookings'));
+
+// Check if the data exists and display it
+if (selectedBookings) {
+    console.log('Selected Bookings:', selectedBookings);
+} else {
+    console.log('No bookings found.');
+}
+  </script>
 
 </body>
 

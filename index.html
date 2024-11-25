@@ -424,364 +424,32 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Bookings</h2>
         <p>Choose your prefered Day and Time</p>
+        <div class="legend">
+          <div class="legend-item">
+              <div class="color-box green"></div>
+              <span>Available</span>
+          </div>
+          <div class="legend-item">
+              <div class="color-box blue"></div>
+              <span>Booked (Male)</span>
+          </div>
+          <div class="legend-item">
+              <div class="color-box pink"></div>
+              <span>Booked (Female)</span>
+          </div>
+          <div class="legend-item">
+              <div class="color-box yellow"></div>
+              <span>Selected Now</span>
+          </div>
+       
+          <div class="button-container">
+            <button class="proceed-button" onclick="proceedBooking()">Proceed</button>
+        </div>
+      </div>
+      
       </div><!-- End Section Title -->
       <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th rowspan="2" class="time-header">Time</th>
-              <th colspan="15" class="date-header">Date</th>
-            </tr>
-            <tr>
-              <!-- Dates -->
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
-              <th>5</th>
-              <th>6</th>
-              <th>7</th>
-              <th>8</th>
-              <th>9</th>
-              <th>10</th>
-              <th>11</th>
-              <th>12</th>
-              <th>13</th>
-              <th>14</th>
-              <th>15</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Time slots -->
-            <tr>
-              <td>6</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>8</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>9</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>10</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>11</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>12</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>13</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>14</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>15</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>16</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>17</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>18</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>19</td>
-              <td><div class="court booked-male">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked-female">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>20</td>
-              <td><div class="court booked-male">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked-female">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>21</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>22</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    <tr>
-              <td>23</td>
-              <td><div class="court booked">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court booked">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-              <td><div class="court">Court 1</div><div class="court">Court 2</div></td>
-            </tr>
-    
-    
-            <!-- Add rows for other time slots (7, 8, 9, etc.) here -->
-          </tbody>
-        </table>
+        <table id="bookingTable"> </table>
       </div>
     </section><!-- /Services Section -->
    
@@ -996,6 +664,71 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+document.querySelector("table").addEventListener("click", function (event) {
+    const clickedDiv = event.target;
+
+    // Ensure the clicked element is a div within the table
+    if (!clickedDiv.classList.contains("bookedfor-null") &&
+        !clickedDiv.classList.contains("bookedfor-M") &&
+        !clickedDiv.classList.contains("bookedfor-F") &&
+        !clickedDiv.classList.contains("selected-now")) {
+        return;
+    }
+
+    // JSON variable to store selected divs' attributes
+    if (!window.selectedBookings) {
+        window.selectedBookings = [];
+    }
+
+    // Case 1: Do nothing for `bookedfor-M` or `bookedfor-F`
+    if (clickedDiv.classList.contains("bookedfor-M") || clickedDiv.classList.contains("bookedfor-F")) {
+        return;
+    }
+
+    // Case 2: If clicked on `bookedfor-null`
+    if (clickedDiv.classList.contains("bookedfor-null") && !clickedDiv.classList.contains("selected-now")) {
+        // Collect data attributes
+        const bookingData = {
+            bookingDate: clickedDiv.getAttribute("data-booking-date"),
+            bookingTime: clickedDiv.getAttribute("data-booking-time"),
+            courtNo: clickedDiv.getAttribute("data-court-no"),
+        };
+
+        // Add class `selected-now` to the div
+        clickedDiv.classList.add("selected-now");
+
+        // Store in JSON variable
+        window.selectedBookings.push(bookingData);
+        console.log("Selected Booking:", bookingData);
+        return;
+    }
+
+    // Case 3: If clicked on `selected-now`
+    if (clickedDiv.classList.contains("selected-now")) {
+        // Remove the `selected-now` class
+        clickedDiv.classList.remove("selected-now");
+
+        // Remove the corresponding booking data from the JSON variable
+        const bookingDate = clickedDiv.getAttribute("data-booking-date");
+        const bookingTime = clickedDiv.getAttribute("data-booking-time");
+        const courtNo = clickedDiv.getAttribute("data-court-no");
+
+        window.selectedBookings = window.selectedBookings.filter(
+            (booking) =>
+                booking.bookingDate !== bookingDate ||
+                booking.bookingTime !== bookingTime ||
+                booking.courtNo !== courtNo
+        );
+
+        console.log("Removed Booking:", { bookingDate, bookingTime, courtNo });
+    }
+    console.log(window.selectedBookings)
+});
+
+  </script>
+
 
 </body>
 

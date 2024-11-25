@@ -5,7 +5,41 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+/*function for updating racket qty*/ 
+     function updateRacketQty(){
+        const quantityDropdown = document.getElementById('quantity');
+        const totalPriceElement = document.getElementById('total-price');
 
+        
+            const quantity = parseInt(quantityDropdown.value, 10);
+            const totalPrice = quantity*300;
+            totalPriceElement.textContent = totalPrice;
+     
+     }
+     /*function for updating bakk qty*/ 
+     function updateBalltQty(){
+      const quantityDropdown = document.getElementById('ball-quantity');
+      const totalPriceElement = document.getElementById('ball-total-price');
+
+      
+          const quantity = parseInt(quantityDropdown.value, 10);
+          const totalPrice = quantity*300;
+          totalPriceElement.textContent = totalPrice;
+   
+   }
+  //==================proceed booking function==================
+  function proceedBooking(){
+    if (!window.selectedBookings) {
+      window.selectedBookings = [];
+  }
+    if (window.selectedBookings.length === 0){
+      alert('Please select date and time')
+    }else {
+      localStorage.setItem('selectedBookings', JSON.stringify(window.selectedBookings));
+      window.location.href = 'equipment.html';
+    }
+
+  }
 (function() {
   "use strict";
 
@@ -198,7 +232,82 @@
       }
     })
   }
+
+  //====================================
+  async function fetchData() {
+    const bookingTable = document.getElementById('bookingTable');
+    const toDate = new Date().toISOString().split('T')[0]; // Example: today's date as YYYY-MM-DD
+    const url = `http://129.154.230.29:3000/fetch-bookings`;
+    //const corsProxy = 'https://cors-anywhere.herokuapp.com/'; // CORS proxy
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        // Extract unique dates and times
+        const dates = [...new Set(data.items.map(item => new Date(item.booking_date).toLocaleDateString()))];
+        const times = [...new Set(data.items.map(item => item.booking_time))].sort((a, b) => a - b);
+
+        // Create table headers
+        const headerRow = document.createElement('tr');
+        headerRow.appendChild(document.createElement('th')); // Empty cell for row header
+        dates.forEach(date => {
+            const th = document.createElement('th');
+            th.textContent = date;
+            headerRow.appendChild(th);
+        });
+        bookingTable.appendChild(headerRow);
+
+        // Create table rows for each booking time
+        times.forEach(time => {
+            const row = document.createElement('tr');
+            const timeCell = document.createElement('td');
+            timeCell.textContent = time;
+            row.appendChild(timeCell);
+
+            // Create cells for each date
+            dates.forEach(date => {
+                const cell = document.createElement('td');
+                 cell.classList.add('my-class');
+                const bookingsForDateAndTime = data.items.filter(item => 
+                    new Date(item.booking_date).toLocaleDateString() === date && item.booking_time === time
+                );
+
+                // Populate cell with court numbers
+                if (bookingsForDateAndTime.length > 0) {
+                    //cell.textContent = bookingsForDateAndTime.map(b => `<div class="m-booked">Court ${b.court_no}</div>`).join(', ');
+                    //cell.innerHTML   = bookingsForDateAndTime.map(b => `<div class="court bookedfor-${b.booked_for}">Court ${b.court_no}</div>`).join('');
+                    cell.innerHTML = bookingsForDateAndTime
+  .map(
+    b =>
+      `<div class="court bookedfor-${b.booked_for}" 
+            data-booking-date="${b.booking_date}" 
+            data-booking-time="${b.booking_time}"
+            data-court-no="${b.court_no}">
+         Court ${b.court_no}
+       </div>`
+  )
+  .join('');
+
+                } else {
+                    cell.textContent = 'Available';
+                }
+
+                row.appendChild(cell);
+            });
+
+            bookingTable.appendChild(row);
+        });
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+
+
+  //=======================================
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
+  window.addEventListener('load', fetchData);
+  
 })();
