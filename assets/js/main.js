@@ -237,7 +237,7 @@
   async function fetchData() {
     const bookingTable = document.getElementById('bookingTable');
     const toDate = new Date().toISOString().split('T')[0]; // Example: today's date as YYYY-MM-DD
-    const url = `https://xtremepadelzambia-6k1egtu40-litelinkerps-projects.vercel.app/api/apex`;
+    const url = `https://xtremepadelzambia-ln6wiorvw-litelinkerps-projects.vercel.app/api/apex`;
     //const corsProxy = 'https://cors-anywhere.herokuapp.com/'; // CORS proxy
 
     try {
